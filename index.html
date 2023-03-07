@@ -151,64 +151,34 @@
         <!-- HTML Structure
 		============================ -->
         <section id="idocs_html_structure">
-          <h2>HTML Structure</h2>
-          <p>iDocs follows a simple and easy to customize coding structure. Here is the sample for your reference:<br>
-            The template is based on <a class="ml-1" target="_blank" href="https://getbootstrap.com/"><i class="fas fa-external-link-alt"></i> Bootstrap Framework</a></p>
-          <pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
+            <h2>HTML Structure</h2>
+            
+    <!-- This is a wrapper around the scrolly in case you want to apply extra styling (see Step 6 in the help doc) -->
+            <div id="my-wrapper">
 
-&lt;!-- Your Title, Description, Stylesheets
-============================================= --&gt;
+                <!--  Drop your choice of Flourish embed code - you can use either the script or iframe embed codes here -->
+                <div class="flourish-embed" data-src="story/1847667?70747" data-url="https://flo.uri.sh/story/1847667/embed" data-height="60vh">
+                <script src="https://public.flourish.studio/resources/embed.js"></script></div>
 
-&lt;/head&gt;
+                <!-- Here is where you add your captions, linking them to specific slides in the story -->
+                <p>Text for slide 1<a href="#story/1847667/slide-1"></a></p>
 
-&lt;body data-spy=&quot;scroll&quot; data-target=&quot;.idocs-navigation&quot; data-offset=&quot;125&quot;&gt;
+                <p>Text for slide 2<a href="#story/1847667/slide-2"></a></p>
 
-&lt;!-- Document Wrapper   
-=============================== --&gt;
-&lt;div id=&quot;main-wrapper&quot;&gt; 
-  
-  &lt;!-- Header
-  ============================ --&gt;
-  &lt;header id=&quot;header&quot; class=&quot;sticky-top&quot;&gt;
-   ......
-  &lt;/header&gt;
-  &lt;!-- Header End --&gt; 
-  
-  &lt;!-- Content
-  ============================ --&gt;
-  &lt;div id=&quot;content&quot; role=&quot;main&quot;&gt; 
-    
-    &lt;!-- Sidebar Navigation
-    ============================ --&gt;
-    &lt;div class=&quot;idocs-navigation bg-light&quot;&gt;
-     .....
-    &lt;/div&gt;
-    
-    &lt;!-- Docs Content
-    ============================ --&gt;
-    &lt;div class=&quot;idocs-content&quot;&gt;
-      &lt;div class=&quot;container&quot;&gt;
-        .......
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-  &lt;!-- Content end --&gt; 
-  
-  &lt;!-- Footer --&gt;
-  &lt;footer id=&quot;footer&quot; class=&quot;section bg-dark footer-text-light&quot;&gt;
-    &lt;div class=&quot;container&quot;&gt; ...... &lt;/div&gt;
-  &lt;/footer&gt;
-  &lt;!-- Footer end --&gt; 
-  
-&lt;/div&gt;
-&lt;!-- Document Wrapper end --&gt; 
+                <p>Text for slide 3<a href="#story/1847667/slide-3"></a></p>
 
-&lt;!-- JavaScript --&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-          <p class="alert alert-info">If you need more information, please visit bootstrap site: <a target="_blank" href="https://getbootstrap.com/docs/4.4/layout/grid/">https://getbootstrap.com</a></p>
+                <p>Text for slide 4<a href="#story/1847667/slide-4"></a></p>
+
+                <p>Text for slide 5<a href="#story/1847667/slide-5"></a></p>
+
+            </div>
+
+            <!-- Add the Flourish Scrolly library -->
+            <script src="https://cdn.flourish.rocks/flourish-scrolly-v3.1.0.min.js" type="text/javascript"></script>
+
+            <!-- Initialize the library to turn your story into scrolly magic! -->
+            <script type="text/javascript">initFlourishScrolly();</script>
+
         </section>
         
 		<hr class="divider">
