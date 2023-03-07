@@ -786,13 +786,13 @@ hr {
 
 /*=== 4.1 Main Navigation ===*/
 .navbar-light .navbar-nav .active > .nav-link {
-  color: #0c2f55;
+    color: #912680;
 }
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show {
-  color: #0c2f55;
+    color: #912680;
 }
 .navbar-light .navbar-nav .show > .nav-link {
-  color: #0c2f55;
+  color: #912680;
 }
 
 .primary-menu {
@@ -1995,7 +1995,7 @@ hr {
   white-space: nowrap !important;
 }
 .nav-tabs .nav-item .nav-link.active {
-  color: #0c2f55;
+  color: #912680;
 }
 .nav-tabs .nav-item .nav-link.active:after {
   height: 2px;
