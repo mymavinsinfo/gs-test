@@ -11,6 +11,35 @@
 
 <!-- Stylesheet
 ============================== -->
+<style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .flex-item-left {
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    .flex-item-right {
+      padding: 10px;
+      flex: 50%;
+    }
+    
+    /* Responsive layout - makes a one column-layout instead of a two-column layout */
+    @media (max-width: 800px) {
+      .flex-item-right, .flex-item-left {
+        flex: 100%;
+      }
+    }
+    </style>
 <!-- Bootstrap -->
 <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
 <!-- Font Awesome Icon -->
@@ -71,11 +100,11 @@
     <!-- Navbar End --> 
   </header>
   <!-- Header End --> 
-
+  
   <!-- Content
   ============================ -->
   <div id="content" role="main">
- 
+    
 	<!-- Sidebar Navigation
 	============================ -->
 	<div class="idocs-navigation bg-light">
@@ -187,21 +216,41 @@
             <section id="national">
                 <h2>Against the Nation</h2>
                 <h3>See how your costs compare.</h3>
+                <div class="flex-container">
+                    <div class="flex-item-left">  <div class="flourish-embed flourish-chart" data-src="visualisation/12982766">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    </div></div>
+                    <div class="flex-item-right"> <div class="flourish-embed flourish-chart" data-src="visualisation/12983452">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    </div></div>
+                  </div>
+                  
 
-                
-
-                <div style="width:48%; display: inline-block; vertical-align: top;" class="flourish-embed flourish-chart" data-src="visualisation/12982766">
+                <!-- <div class="flourish-embed flourish-chart" data-src="visualisation/12982766">
                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
 
-                <div style="width:48%; display: inline-block; vertical-align: top;" class="flourish-embed flourish-chart" data-src="visualisation/12983452">
+                <div class="flourish-embed flourish-chart" data-src="visualisation/12983452">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                </div> -->
+
+                <hr class="divider">
+
+                <h3>The effort of commuting.</h3>
+
+                <div class="flourish-embed flourish-chart" data-src="visualisation/12982904">
                     <script src="https://public.flourish.studio/resources/embed.js"></script>
                 </div>
-                
+
+                <div class="flourish-embed flourish-chart" data-src="visualisation/12983735">
+                    <script src="https://public.flourish.studio/resources/embed.js"></script>
+                </div>
+
 
             </section>
 
             <hr class="divider">
+
 
 
             <!-- Public Transport
